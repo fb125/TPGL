@@ -48,8 +48,8 @@ public class Orange {
 
     @Override
     public boolean equals(Object o){  //predicat pour tester si 2 oranges sont equivalentes
-        if(this.getClass() == o.getClass()){
-            System.out.println("fdfdfdf");
+        if( o!=null &&  getClass() == o.getClass()){
+            System.out.println("FFFFF");
             Orange or = (Orange) o;
             return (prix == or.prix && origine.equals(or.origine));
         }
@@ -70,10 +70,12 @@ public class Orange {
         System.out.println(o.getOrigine());
 
         System.out.println(o);
-	      Orange p = new Orange(15,"Allemagne");
+	      Orange p(o);
 
-        System.out.println(o==p);
+        System.out.println(o.equals(p));
         System.out.println(o+"\n"+p);
+
+        System.out.
 
    }
 }
